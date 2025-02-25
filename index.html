@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AR Animated 3D Model</title>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        model-viewer {
+            width: 100%;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <model-viewer 
+        src="pushup.glb"
+        ar 
+        ar-modes="webxr scene-viewer quick-look" 
+        ar-placement="floor"
+        camera-controls 
+        auto-rotate 
+        animation-name="*" 
+        autoplay>
+    </model-viewer>
+</body>
+</html>
